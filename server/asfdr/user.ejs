@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><%= title %></h1>
+        <table width="100%" border="1">
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>edit/delete</th>
+            </tr>
+            <%user.forEach(function(user) { %>
+            <tr>
+                <td><%= user.roll_no %></td>
+                <td><%= user.S_name %></td>
+                <td>
+                    <a href="/edit/<%= user.roll_no %>"><button>edit</button></a>
+                    <a href="delete/<%= user.roll_no %>"><button>delete</button></a>
+                </td>
+            </tr>
+            <% }); %>
+        </table><br><br>
+        <a href="add"><button>Add</button></a>
+        
+    </body>
+</html>

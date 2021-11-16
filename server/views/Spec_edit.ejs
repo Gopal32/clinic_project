@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><%= title %></h1><br><br>
+        <form action="/edit_spectiality" method="post">
+            <input type="hidden" id="srno" name="srno" value="<%= user.Sr_no %>"> 
+            <input type="text" id="spec" name="spec" value="<%= user.speciality %>"> 
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

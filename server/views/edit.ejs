@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><%= title %></h1>
+        <form action="/save_edit" method="post">
+            <input type="text" id="rno" name="rno" value="<%= user.roll_no %>">
+            <input type="text" id="sname" name="sname" value="<%= user.S_name %>">
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><%= title %></h1>
+        <form action="Add_doctor" method="post">
+            <input type="text" name="f_name" >
+            <input type="text" name="l_name" >
+            <select aria-placeholder="Select " name="spec">
+                <% user.forEach(function(user) { %>
+                <option><%= user.speciality %></option>
+                <% }) %>
+            </select><br>
+            <input type="text" name="photo" >
+            <label>Time zone</label>
+            <input type="checkbox" name="time[]" value="10:00">10:00<br> 
+            <input type="checkbox" name="time[]" value="10:15">10:15<br> 
+            <input type="checkbox" name="time[]" value="10:30">10:30<br> 
+            <input type="checkbox" name="time[]" value="10:45">10:45<br> 
+            <textarea name="desc"></textarea>
+            <button>submit</button>
+        </form>
+    </body>
+</html>

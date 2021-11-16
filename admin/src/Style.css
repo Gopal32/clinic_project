@@ -1,0 +1,313 @@
+/****Admin*****/
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #343a40;
+    padding: 17px;
+}
+.navbar h1{
+    color:white;
+    margin-left: 27%;
+    font-weight: 10px;
+}
+.admin_body{
+    display: flex;
+}
+.menu{
+    width: 25%;
+    background-color: #343a40;
+    height:91vh;
+}
+.menuLink{
+    width: 100%;
+    display: flex;
+    color: #e1e9fc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 65px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menuLink:hover{
+    background: #252831;
+    border-left: 4px solid #632ce4;
+    cursor: pointer;
+}
+.menuLink label{
+    margin-left: 16px;
+}
+.dropMenu{
+    background: #414757;
+    height: 60px;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+.dropMenu:hover{
+    background: #632ce4;
+    cursor: pointer;
+}
+.dropMenu label{
+    margin-left: 16px;
+}
+.main_patient{
+    margin: 20px;
+    width: 137vh;
+    height: 75vh;
+}
+.main_patient .search{
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.main_patient .search .search_icon{
+    margin-top: 10px;
+}
+.main_patient .search .input{
+    margin-left: 5px;
+	height: 100%;
+    border: none;
+	border-bottom: 2px solid #d9d9d9;
+	outline: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+.main_patient .search .input:hover{
+    border-bottom: 2px solid red;
+}
+.main_patient .patient_info{
+    margin-top: 40px;
+    width: 100%;
+    height: 62vh;
+    overflow: auto;
+}
+.main_patient .patient_info tr{
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.main_patient .patient_info .table_head{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.main_patient .patient_info .table_row{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+.main_adddoctor{
+    margin: 20px;
+    width: 137vh;
+    height: 75vh;
+}
+.main_adddoctor fieldset{
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+}
+.main_adddoctor .add_body{
+    margin: 20px;
+}
+.main_adddoctor .add_body label{
+    font-size: 18px;
+}
+.main_adddoctor .add_body input{
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 10px;
+    border: 1px solid #8993a4;
+    padding: 8px 12px;
+}
+.main_adddoctor .add_body select{
+    background-color: white;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid #8993a4;
+    padding: 8px 12px;
+    width: 30%;
+}
+.main_adddoctor .add_body textarea{
+    margin-left: 26vh;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.main_adddoctor .add_body button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.main_adddoctor .add_body button:hover{
+    opacity: 0.7;
+}
+.main_doctorsearch{
+    margin: 20px;
+    width: 137vh;
+    height: 75vh;
+}
+.main_doctorsearch .search{
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.main_doctorsearch .search .search_icon{
+    margin-top: 10px;
+}
+.main_doctorsearch .search .input{
+    margin-left: 5px;
+	height: 100%;
+    border: none;
+	border-bottom: 2px solid #d9d9d9;
+	outline: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+.main_doctorsearch .search .input:hover{
+    border-bottom: 2px solid red;
+}
+.main_doctorsearch .doctor_info{
+    margin-top: 40px;
+    width: 100%;
+    height: 62vh;
+    overflow: auto;
+}
+.main_doctorsearch .doctor_info tr{
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.main_doctorsearch .doctor_info .table_head{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.main_doctorsearch .doctor_info .table_row{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+.main_speciality {
+    margin: 20px;
+    width: 137vh;
+    height: 75vh;
+}
+.main_speciality .speciality_info{
+    height: 60vh;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.main_speciality .speciality_info table{
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: table;
+}
+.main_speciality .speciality_info table tr{
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.main_speciality .speciality_info .table_head {
+    background: #95A5A6;
+    font-weight: 900;
+}
+.main_speciality .speciality_info .table_row {
+    background: #f6f6f6;
+}  
+.main_speciality .speciality_info .table_row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+.main_speciality form{
+    margin-left: 40px;
+}
+.main_speciality form label{
+    font-size: 22px;
+}
+.main_speciality form input{
+    padding: 10px;
+    width: 40vh;
+    border-radius: 10px;
+}
+.main_speciality form button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 25vh;
+}
+.main_speciality form button:hover{
+    opacity: 0.7;
+}
+.main_recent{
+    margin: 20px;
+    width: 137vh;
+    height: 75vh;
+}
+.main_recent .search{
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.main_recent .search .search_icon{
+    margin-top: 10px;
+}
+.main_recent .search .input{
+    margin-left: 5px;
+	height: 100%;
+    border: none;
+	border-bottom: 2px solid #d9d9d9;
+	outline: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+.main_recent .search .input:hover{
+    border-bottom: 2px solid red;
+}
+.main_recent .recent_info{
+    margin-top: 40px;
+    width: 100%;
+    height: 62vh;
+    overflow: auto;
+}
+.main_recent .recent_info tr{
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.main_recent .recent_info .table_head{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.main_recent .recent_info .table_row{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
